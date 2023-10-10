@@ -21,11 +21,11 @@ const FinancialSlice = createSlice(
     },
     extraReducers: (builder) => {
       builder.addCase(fetchFinance.pending, (state) => ({
-        ...state, isLoading,
-      })),
+        ...state, isLoading: false,
+      }));
       builder.addCase(fetchFinance.fulfilled, (state, action) => ({
         ...state, isLoading: false, financial: action.payload,
-      })),
+      }));
       builder.addCase(fetchFinance.rejected, (state, action) => ({
         ...state, isLoading: false, error: action.payload,
       }));
