@@ -1,0 +1,40 @@
+.detailHeader {
+  display: flex;
+  justify-content: start;
+  background-color: #4369b1;
+}
+
+.detailHead {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.detailCardContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.detailCardContainer :nth-child(odd) {
+  background-color: #5687e3;
+  opacity: 0.9;
+}
+
+.detailCardContainer :nth-child(even) {
+  background-color: #5687e3;
+}
+
+.detailCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
