@@ -9,7 +9,7 @@ const HomeComponent = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { financial } = useSelector((store) => store.financial);
-  const displayData = financial.slice(0, 10);
+  const displayData = financial?.slice(0, 10);
 
   useEffect(() => {
     dispatch(fetchFinance());
