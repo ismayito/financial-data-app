@@ -10,7 +10,6 @@ const HomeComponent = () => {
   const dispatch = useDispatch();
   const { financial } = useSelector((store) => store.financial);
   const displayData = financial.slice(0, 10);
-  console.log(displayData);
 
   useEffect(() => {
     dispatch(fetchFinance());
@@ -22,7 +21,7 @@ const HomeComponent = () => {
     dispatch(financialItemDetail(id));
     navigate('/details');
   };
-  console.log(displayData.length);
+
   return (
     <>
       <div className="headSection">

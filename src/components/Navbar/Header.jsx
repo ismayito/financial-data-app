@@ -1,8 +1,8 @@
 import React from 'react';
-import '../pages/Pages.css';
 import { BsChevronLeft } from 'react-icons/bs';
 import { MdKeyboardVoice } from 'react-icons/md';
 import { IoIosSettings } from 'react-icons/io';
+import '../../pages/Pages.css';
 
 const Header = () => (
   <div>

@@ -20,9 +20,7 @@ const FinancialSlice = createSlice(
     reducers: {
       financialItemDetail: (state, action) => {
         const id = action.payload;
-        console.log(id);
         const filteredData = state.financial.filter((item) => item.symbol === id);
-        console.log(filteredData);
         return (
           { ...state, financial: filteredData }
         );

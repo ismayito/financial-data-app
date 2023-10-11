@@ -6,7 +6,6 @@ import './Detail.css';
 
 const Detail = () => {
   const { financial } = useSelector((store) => store.financial);
-  console.log(financial);
   return (
     <div>
       <div className="headSection">
