@@ -18,6 +18,15 @@ const FinancialSlice = createSlice(
     name: 'FinancialSlice',
     initialState,
     reducers: {
+      financialItemDetail: (state, action) => {
+        const id = action.payload;
+        console.log(id);
+        const filteredData = state.financial.filter((item) => item.symbol === id);
+        console.log(filteredData);
+        return (
+          { ...state, financial: filteredData }
+        );
+      },
     },
     extraReducers: (builder) => {
       builder.addCase(fetchFinance.pending, (state) => ({
@@ -32,5 +41,5 @@ const FinancialSlice = createSlice(
     },
   },
 );
-export const { extraReducers } = FinancialSlice.actions;
+export const { extraReducers, financialItemDetail } = FinancialSlice.actions;
 export default FinancialSlice.reducer;

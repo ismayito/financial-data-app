@@ -1,8 +1,9 @@
 import React from 'react';
+import Detail from '../components/Detail/Detail';
 
 const Details = () => (
   <div>
-    <p>Details page</p>
+    <Detail />
   </div>
 );
 
