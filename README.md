@@ -118,6 +118,7 @@ If you like this project checkout my other repositories on my github profile
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank the microverse staff for doing their best to equip us with the necesarry skills to start our software engineering carreers. I would also like to thank my coding partners who have helped me along the way.
+-This replica was originally designed by Nelson Sakwa in Behance. Checkout Nelson's design [Here](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
