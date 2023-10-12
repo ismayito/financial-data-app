@@ -2,8 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const url = 'https://financialmodelingprep.com/api/v3/etf/list?apikey=Uzp6uPPYHijJhgsqRJ47VGkhzdZW3Yi1';
+// const url = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15';
 const initialState = {
   financial: [],
+  financialItemDetailsArray: [],
   isLoading: false,
   error: null,
 };
@@ -22,7 +24,7 @@ const FinancialSlice = createSlice(
         const id = action.payload;
         const filteredData = state.financial.filter((item) => item.symbol === id);
         return (
-          { ...state, financial: filteredData }
+          { ...state, financialItemDetailsArray: filteredData }
         );
       },
     },
@@ -39,5 +41,5 @@ const FinancialSlice = createSlice(
     },
   },
 );
-export const { extraReducers, financialItemDetail } = FinancialSlice.actions;
+export const { extraReducers, financialItemDetail, itemDetailDisplay } = FinancialSlice.actions;
 export default FinancialSlice.reducer;

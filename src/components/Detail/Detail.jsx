@@ -5,7 +5,8 @@ import '../../pages/Pages.css';
 import './Detail.css';
 
 const Detail = () => {
-  const { financial } = useSelector((store) => store.financial);
+  const { financialItemDetailsArray } = useSelector((store) => store.financial);
+
   return (
     <div>
       <div className="headSection">
@@ -13,21 +14,21 @@ const Detail = () => {
           <img src="../assets/images/detail.jpg" alt="financeImage" className="fruityImage" />
         </section>
         {
-          financial.map((item) => (
-            <section className="introInfo" key={item.symbol}>
-              <h1 className="heading">
-                {item.exchange}
-              </h1>
-            </section>
-          ))
+           financialItemDetailsArray.map((item) => (
+             <section className="introInfo" key={item.symbol}>
+               <h1 className="heading">
+                 {item.exchange}
+               </h1>
+             </section>
+           ))
         }
       </div>
-      {financial.map((item) => (
+      { financialItemDetailsArray.map((item) => (
         <section className="detailHeader" key={item.symbol}>
           <p className="detailHead">{item.name}</p>
         </section>
       ))}
-      {financial.map((item) => (
+      {financialItemDetailsArray.map((item) => (
         <div className="detailCardContainer" key={item.symbol}>
           <div className="detailCard">
             <p>Exchange Short Name</p>
