@@ -5,6 +5,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀Live video showcasing the project](#live video of the project)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -15,7 +16,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [fruit-ingredients-app] <a name="about-project"></a>
+# 📖 [financial-data-app] <a name="about-project"></a>
 
 **[react_group_project]** is a React Javascript website project which makes use of  react Javascript to hit the API, it displays a list of missions , rockets from the API to the user, the user is able to make a booking for the mission or cancel the booking of the earlier booked mission.The user is able to list a list of booked missions and rockets. I t has got different pages created using react router.
 We have also performed different tests for different components.
@@ -37,8 +38,21 @@ We have also performed different tests for different components.
 </details>
 
 ### Key Features <a name="key-features"></a>
+- **[financial-data-app UI ]**
+- **[Search input ]**
+- **[home page ]**
+- **[Detail page ]**
+- **[Page routing ]**
+- **[App tests ]**
 
-- **[react_group_project UI ]**
+### [🚀 Live Demo](#live-demo)
+---------------------------------------------------------------------------------------------------------------------
+[🚀 Live Demo](#live-demo)
+
+### [🚀Live video showcasing the project](#live video of the project)
+---------------------------------------------------------------------------------------------------------------------
+[🚀 Live Video Link](https://www.loom.com/share/48a70071d17c453daafd911a3224b8c1)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
