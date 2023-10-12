@@ -47,7 +47,7 @@ We have also performed different tests for different components.
 
 ### [🚀 Live Demo](#live-demo)
 ---------------------------------------------------------------------------------------------------------------------
-[🚀 Live Demo](#live-demo)
+[🚀 Live Demo](https://development--animated-nougat-6a7347.netlify.app/)
 
 ### [🚀Live video showcasing the project](#live video of the project)
 ---------------------------------------------------------------------------------------------------------------------
