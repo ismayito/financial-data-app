@@ -5,6 +5,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀Live video showcasing the project](#live video of the project)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -15,10 +16,10 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Finacial-data-app] <a name="about-project"></a>
+# 📖 [financial-data-app] <a name="about-project"></a>
 
-**[react_group_project]** is a React Javascript Capstone website project which makes use of  react Javascript to hit the API, it displays a list of financial companies, price stocks and also more detail of each company, The user is able to click on each company to see the details. from  It has got different pages created using react router.
-We have also performed different tests for different components. The design of it is based on the original design by Nelson Sakwa on Behance
+**[react_group_project]** is a React Javascript website project which makes use of  react Javascript to hit the API, it displays a list of missions , rockets from the API to the user, the user is able to make a booking for the mission or cancel the booking of the earlier booked mission.The user is able to list a list of booked missions and rockets. I t has got different pages created using react router.
+We have also performed different tests for different components.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,8 +38,21 @@ We have also performed different tests for different components. The design of i
 </details>
 
 ### Key Features <a name="key-features"></a>
+- **[financial-data-app UI ]**
+- **[Search input ]**
+- **[home page ]**
+- **[Detail page ]**
+- **[Page routing ]**
+- **[App tests ]**
 
-- **[react_group_project UI ]**
+### [🚀 Live Demo](#live-demo)
+---------------------------------------------------------------------------------------------------------------------
+[🚀 Live Demo](https://development--animated-nougat-6a7347.netlify.app/)
+
+### [🚀Live video showcasing the project](#live video of the project)
+---------------------------------------------------------------------------------------------------------------------
+[🚀 Live Video Link](https://www.loom.com/share/48a70071d17c453daafd911a3224b8c1)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,12 +75,12 @@ In order to run this project you need the following:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-git clone https://github.com/ismayito/financial-data-app.git
+git clone https://github.com/AbuTalha3/react_group_project.git
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd financial-data-app``**
+**``you@your-Pc-name:~$ cd react_group_project``**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="author"></a>
@@ -104,9 +118,7 @@ If you like this project checkout my other repositories on my github profile
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the following for the contribution to this projects. -Thanks Microverse for the support and inspiration to do this. -This replica was originally designed by Nelson Sakwa
- in Behance. Checkout Nelson Sakwa
-(https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) [Here]
+I would like to thank the microverse staff for doing their best to equip us with the necesarry skills to start our software engineering carreers. I would also like to thank my coding partners who have helped me along the way.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
