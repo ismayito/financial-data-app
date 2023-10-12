@@ -1,7 +1,11 @@
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
+import thunk from 'redux-thunk';
+import configureStore from 'redux-mock-store';
+import axios from 'axios';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import FinancialSlice, { fetchFinance, financialItemDetail } from './Redux/FinancialSlice';
 import store from './Redux/store';
 import Detail from './components/Detail/Detail';
 import Header from './components/Navbar/Header';
@@ -10,6 +14,17 @@ import Layout from './components/Navbar/Layout';
 import HomeComponent from './components/Home/HomeComponent';
 import Home from './pages/Home';
 import App from './App';
+
+const mockResponseData = {
+  symbol: 'AAPL',
+  name: 'Apple Inc.',
+  price: 150.42,
+  exchange: 'NASDAQ',
+  exchangeShortName: 'NASDAQ',
+  type: 'stock',
+};
+jest.mock('axios');
+axios.get.mockResolvedValue(mockResponseData);
 
 describe('Tests for the financial App', () => {
   it('Tests the display of Header Component', () => {
@@ -109,5 +124,38 @@ describe('Tests for the financial App', () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it('fetches financial data and returns the data', async () => {
+    axios.get.mockResolvedValue({ data: mockResponseData });
+    const mockStore = configureStore([thunk]);
+    const store = mockStore();
+    await store.dispatch(fetchFinance());
+    const actions = store.getActions();
+    expect(actions[0].type).toEqual(fetchFinance.pending.type);
+    expect(actions[1].type).toEqual(fetchFinance.fulfilled.type);
+    expect(actions[1].payload).toEqual(mockResponseData);
+  });
+
+  it('should handle financialItemDetail action', () => {
+    const initialState = {
+      financial: [
+        { symbol: 'AAPL', name: 'Apple Inc.' },
+        { symbol: 'GOOGL', name: 'Alphabet Inc.' },
+      ],
+      financialItemDetailsArray: [],
+    };
+
+    const action = financialItemDetail('AAPL');
+    const newState = FinancialSlice(initialState, action);
+    expect(newState).toEqual({
+      financial: [
+        { symbol: 'AAPL', name: 'Apple Inc.' },
+        { symbol: 'GOOGL', name: 'Alphabet Inc.' },
+      ],
+      financialItemDetailsArray: [
+        { symbol: 'AAPL', name: 'Apple Inc.' },
+      ],
+    });
   });
 });
