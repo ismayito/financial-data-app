@@ -53,7 +53,6 @@ We have also performed different tests for different components.
 ---------------------------------------------------------------------------------------------------------------------
 [🚀 Live Video Link](https://www.loom.com/share/48a70071d17c453daafd911a3224b8c1)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
