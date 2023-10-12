@@ -2,6 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const url = 'https://financialmodelingprep.com/api/v3/etf/list?apikey=Uzp6uPPYHijJhgsqRJ47VGkhzdZW3Yi1';
+// const url = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15';
 const initialState = {
   financial: [],
   financialItemDetailsArray: [],
@@ -26,11 +27,6 @@ const FinancialSlice = createSlice(
           { ...state, financialItemDetailsArray: filteredData }
         );
       },
-      // itemDetailDisplay: (state) =>{
-      //   return (
-      //     state.financialItemDetailsArray
-      //   )
-      // }
     },
     extraReducers: (builder) => {
       builder.addCase(fetchFinance.pending, (state) => ({
